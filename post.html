@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Venti Domande</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link href="css/stile.css" rel="stylesheet" />
+</head>
+<body class="venti-page">
+    <nav class="top-nav" aria-label="Primary">
+        <a class="top-nav__brand" href="index.html">Isaac's Site</a>
+        <div class="top-nav__links">
+            <a class="top-nav__link" href="index.html">Home</a>
+            <a class="top-nav__link top-nav__link--active" href="post.html" aria-current="page">Venti Domande</a>
+            <a class="top-nav__link" href="Scratch.html">Scratch</a>
+        </div>
+    </nav>
+
+    <main class="venti-shell">
+        <section class="venti-hero">
+            <p class="venti-eyebrow">Italian word game</p>
+            <h1>Venti Domande</h1>
+            <p class="venti-intro">I&apos;m thinking of an Italian word. Ask yes-or-no questions, collect clues, and see if you can guess it before you run out of turns.</p>
+        </section>
+
+        <section class="venti-layout">
+            <div class="venti-card venti-card--primary">
+                <div class="venti-card__header">
+                    <h2>Ask a Question</h2>
+                    <div id="counters" class="venti-counter">Questions asked: 0, Guesses made: 0</div>
+                </div>
+                <div id="questions" class="question-grid">
+                    <button onclick="askQuestion(0)">Is it an animal?</button>
+                    <button onclick="askQuestion(1)">Is it a food?</button>
+                    <button onclick="askQuestion(2)">Is it man-made?</button>
+                    <button onclick="askQuestion(3)">Is it bigger than a person?</button>
+                    <button onclick="askQuestion(4)">Can you eat it?</button>
+                    <button onclick="askQuestion(5)">Is it a place?</button>
+                    <button onclick="askQuestion(6)">Is it electronic?</button>
+                    <button onclick="askQuestion(7)">Is it alive?</button>
+                    <button onclick="askQuestion(8)">Is it a vehicle?</button>
+                    <button onclick="askQuestion(9)">Is it a building?</button>
+                    <button onclick="askQuestion(10)">Is it small?</button>
+                    <button onclick="askQuestion(11)">Does it have wheels?</button>
+                    <button onclick="askQuestion(12)">Is it round?</button>
+                    <button onclick="askQuestion(13)">Is it green?</button>
+                    <button onclick="askQuestion(14)">Can you hold it in your hand?</button>
+                </div>
+            </div>
+
+            <aside class="venti-sidebar">
+                <div class="venti-card venti-card--answer">
+                    <h2>Latest Answer</h2>
+                    <div id="answer" class="answer-pill">Ask your first question</div>
+                </div>
+
+                <div class="venti-card venti-card--guess">
+                    <h2>Make Your Guess</h2>
+                    <div class="guess-row">
+                        <input type="text" id="guess" placeholder="Guess the word" />
+                        <button class="guess-button" onclick="makeGuess()">Guess</button>
+                    </div>
+                    <div id="result" class="result-text"></div>
+                    <div id="hint" class="hint-text"></div>
+                </div>
+
+                <div id="discovered" class="venti-card venti-card--clues">
+                    <h2>Discovered Attributes</h2>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
