@@ -1,0 +1,33 @@
+body{background-color: #f0f0f0;}
+body {
+    font-family: "Inter", sans-serif;
+    color: rgb(83, 82, 82);
+    line-height: 1.7;
+    padding: 200;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
+
+.body {
+    font-family: "Inter", sans-serif;
+    color: green;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.main {
+  width: 75%;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
