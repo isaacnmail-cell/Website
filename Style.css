@@ -7,7 +7,6 @@ body {
     text-align: left;
     margin-left: 100px;
     margin-top: 50px;
-
 }
 body {
   padding-top: 60px;
@@ -16,7 +15,6 @@ body {
     font-family: "Inter", sans-serif;
     color: green;
 }
-
 .header {
   background-color: #ffffff;
   padding: 20px;
@@ -24,6 +22,7 @@ body {
 }
 .page-nav {
 position: sticky; top: 0;
+z-index: 1000;
 }
 
 .main {
