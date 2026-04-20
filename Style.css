@@ -15,8 +15,6 @@ body {
 .body {
     font-family: "Inter", sans-serif;
     color: green;
-
-
 }
 
 .header {
@@ -25,8 +23,7 @@ body {
   border-bottom: 2px solid #ccc;
 }
 .page-nav {
-  position: fixed;
-  top: 0;
+position: sticky; top: 0;
 }
 
 .main {
